@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(129, 13, 13);
+    align-items: center;
+    justify-content: center;
+    height: 35vh; 
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+header h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+body  {
+    background-color: black;
+}
+
+.teksti {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 33vh;
+    font-size: 60px;
+    background-color: hsla(50, 3%, 50%, .65);
+    padding: 0.1em;
+    color: whitesmoke;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.teksti h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.teksti p {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 2%;
+}
+.teksti a {
+  margin-left: 2%;
+  text-decoration: none;
+  color: whitesmoke;
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: auto;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
+  padding: 20px; /*lisää tilaa footerin ympärille */
+  background-color: hsla(50, 3%, 20%, .65);
+  color: whitesmoke;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+footer address {
+  line-height: 0.2; /* säätää rivivälin koon */
+  text-align: left;}
+</style>
+</head>
+<body>
+    <header><h1><strong>Welcome to join as a loyal customer!</strong></h1></header>
+
+<div class="teksti">
+    <article>
+        <h1><strong>Kanta-asiakkuus</strong></h1>
+        <p>As our loyal customer, you will receive information about current offers, new products, and services. Click the link below and join as a loyal customer</p>
+        <a href="login.html">Log in</a>
+    </article>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<footer>
+    <p>Bodybuilders @ 2024</p>
+    <address><p>Pääskynpolku 313</p><br><p>12345 Pääskysaari</p><br><p>Puhelin: 010 010 010</p>
+    </address>
+  </footer>
+</body>
+</html>
