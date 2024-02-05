@@ -44,7 +44,7 @@
 .image {
     width: 100%; /* leveys */
     height: 100%; /* korkeus */
-    object-fit: cover; /* sovitus elementin kokoon, säilytetään kuvasuhde */
+ /*   object-fit: cover; sovitus elementin kokoon, säilytetään kuvasuhde */
     order: 2; /* sijoittelu tokana */
 }
 .text {
