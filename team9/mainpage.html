@@ -6,26 +6,27 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--linkki style.css-tiedostoon -->
 <title>Bodybuilders</title> <!--Tämä otsikko näkyy välilehdessä -->
 <style> /* <style> sisältää css-tyylejä. Headerin css:n laitoin html-dokumenttiin, koska ne eivät toimi style.css-tiedostossa jostain syystä */
-header {
-  position: relative;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: bolder;
-  font-size: 20px;
-  margin-top: 1%;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: white;
+header { /* koko yläosa */
+/*  position: relative;  elementinsijainti */
+  background-color: black; /* taustaväri */
+  display: flex; /* tehdään headerista flex */
+  flex-direction: column; /* flex asettelu on sarake (pystysuora) */
+  align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
+  justify-content: center; /* tasataan elementit keskeltä vaakasuunnassa*/
+  font-weight: bolder; /* otsikon alatekstin fontin leveys paksu */
+  font-size: 30px; /* otsikon alatekstin fonttikoko */
+  margin-top: 1%;  /* asetetaan marginaali */
+  margin-left: 10%; /* asetetaan marginaali */
+  margin-right: 10%; /* asetetaan marginaali */
+  color: whitesmoke;  /* tekstin väri */
 }
-header img {
-  max-height: 50%;
-  max-width: 50%;
+header img { /* yläosan kuva */
+  max-height: 50%; /* max-korkeus headerin korkeudesta*/
+  max-width: 50%; /* max-leveys headerin leveydestä */
   }
   #big {
-    font-size: 30px;
+    font-size: 45px; /* otsikon fonttikoko  */
+    color: whitesmoke; /* tekstin väri */
   }
 </style>
 </head>
