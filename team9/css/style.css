@@ -1,73 +1,77 @@
 .eka {
-    background-color: hsla(50, 3%, 20%, .65);
-    padding: 0.1em;
-    color: whitesmoke;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 1%;
+    background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
+    padding: 0.1em; /* täyttö elementin sisällä */
+    color: whitesmoke; /* tekstin väri */
+    margin-left: 10%; /* asetetaan marginaali */
+    margin-right: 10%; /* asetetaan marginaali */
+    margin-bottom: 1%; /* asetetaan marginaali */
 }
 .eka p {
-    margin-left: 2%;
-    font-size: large;
+    margin-left: 2%; /* asetetaan marginaali */
+    font-size: large; /* fonttikoko suuri */
 }
   h2 {
-    margin-left: 2%;
+    margin-left: 2%; /* asetetaan marginaali */
     /* padding-top: 1.5%; */
   }
   ul {
-    list-style-type: none;
-    margin-left: 0%;}
+    list-style-type: none; /* poistetaan luettelomerkit */
+    margin-left: 0%; /* poistetaan marginaali vasemmalta*/
+  }
   ul a  {
-    list-style-type: none;
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
+    list-style-type: none; /* poistetaan luettelomerkit */
+    font-family:Arial, Helvetica, sans-serif; /* fonttityyli */
+    color: whitesmoke; /* fontin väri */
     text-decoration: none; /* poistaa alleviivauksen */}
   body {
-    background-color: hsla(50, 3%, 1%, .95);
+    background-color: hsla(50, 3%, 1%, .95); /* taustaväri */
 }
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 10%;}
+    display: flex; /* muutetaan asettelu flexiksi */
+    flex-wrap: wrap; /* tasainen sijoittelu */
+    justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
+    padding: 0 10%; /* täyttö elementin sisällä  */
+  }
 .row {
-    display: flex;
+    display: flex; /* muutetaan asettelu flexiksi */
     /* flex-direction: row-reverse; */
-    align-items: center;
-    width: calc(40% - 20px);
-    height: 200px;
-    margin-bottom: 20px;
-    background-color: gray;
+    align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
+    width: calc(40% - 20px); /* leveys */
+    height: 200px; /* korkeus */
+    margin-bottom: 20px; /* asetetaan marginaali */
+    background-color: gray; /* taustaväri */
 }
 .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    order: 2;
+    width: 100%; /* leveys */
+    height: 100%; /* korkeus */
+ /*   object-fit: cover; sovitus elementin kokoon, säilytetään kuvasuhde */
+    order: 2; /* sijoittelu tokana */
 }
 .text {
-    margin-right: 20px;
-    order: 1;
-    margin-left: 30px;
+    margin-right: 20px; /* asetetaan marginaali */
+    order: 1; /* sijoittelu ekana */
+    margin-left: 30px; /* asetetaan marginaali */
   }
   .text a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* poistaa alleviivauksen */
+    color: black; /* tekstin väri */
   }
-@media (max-width: 600px) {
+@media (max-width: 600px) {  /* kun näytön leveys 600px... */
     .row {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: column;  /* ...asettelu muuttuu pystysuunnaksi... */
+        width: 100%; /* ...ja muutetaan leveys */
     }
 }
 footer {
-  display: flex;
+  display: flex; /* muutetaan asettelu flexiksi */
   justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
-  padding: 20px; /* lisää tilaa footerin ympärille */
-  background-color: hsla(50, 3%, 20%, .65);
-  color: white;
-  margin-left: 10%;
-  margin-right: 10%;}
+  padding: 20px; /* täyttö elementin sisällä  */
+  background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
+  color: whitesmoke; /* tekstin väri */
+  margin-left: 10%; /* asetetaan marginaali */
+  margin-right: 10%; /* asetetaan marginaali */
+}
 footer address {
-  line-height: 0.2; /* säätää rivivälin koon */
-  text-align: left;}
+  line-height: 0.2; /* rivivälin koko */
+  text-align: left; /* tasataan teksti vasemmalta */
+}

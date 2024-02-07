@@ -5,75 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<style>
-header {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: rgb(129, 13, 13);
-    align-items: center;
-    justify-content: center;
-    height: 35vh; 
-    margin-top: 1%;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: white;
+<style> /* Css on html-tiedostossa, koska boostrapissa on samoja luokkia ja asettelu ei toimi silloin */
+header { 
+    display: flex; /* muutetaan asettelu flexiksi */
+    flex-direction: column; /* asettelu muuttuu pystysuunnaksi */
+    /* position: relative; */
+    background-color: rgb(129, 13, 13); /* taustaväri */
+    align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
+    justify-content: center; /* jakaa tilan tasaisesti elementtien välillä */
+    height: 35vh; /* korkeus */
+    margin-top: 1%; /* asetetaan marginaali */
+    margin-left: 10%; /* asetetaan marginaali */
+    margin-right: 10%; /* asetetaan marginaali */
+    color: whitesmoke; /* tekstin väri */
 }
 header h1 {
-    font-weight: bolder;
-    font-size: 60px;
+    font-weight: bolder; /* otsikon fontin leveys paksu */
+    font-size: 60px; /* otsikon fontin koko */
 }
 body  {
-    background-color: black;
+    background-color: black; /* taustaväri */
 }
 
 .teksti {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    height: 33vh;
-    font-size: 60px;
-    background-color: hsla(50, 3%, 50%, .65);
-    padding: 0.1em;
-    color: whitesmoke;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    display: flex; /* muutetaan asettelu flexiksi */
+    flex-direction: column; /* asettelu muuttuu pystysuunnaksi */
+    text-align: left; /* tasataan teksti vasemmalta */
+    height: 33vh; /* korkeus */
+    font-size: 60px; /* fontin koko */
+    background-color: hsla(50, 3%, 50%, .65); /* taustaväri */
+    padding: 0.1em; /* täyttö elementin sisällä */
+    color: whitesmoke; /* tekstin väri */
+    margin-left: 10%; /* asetetaan marginaali */
+    margin-right: 10%; /* asetetaan marginaali */
+    margin-bottom: 1%; /* asetetaan marginaali */
+    margin-top: 1%; /* asetetaan marginaali */
 }
 .teksti h1 {
-    font-weight: bolder;
-    font-size: 40px;
-    margin-left: 2%;
-    margin-top: 2%;
+    font-weight: bolder; /* fontin leveys */
+    font-size: 40px; /* fontin koko */
+    margin-left: 2%; /* asetetaan marginaali */
+    margin-top: 2%; /* asetetaan marginaali */
 }
 .teksti p {
-    font-weight: bolder;
-    font-size: 30px;
-    margin-left: 2%;
+    font-weight: bolder; /* fontin leveys */
+    font-size: 30px; /* fontin koko */
+    margin-left: 2%; /* asetetaan marginaali */
 }
 .teksti a {
-  margin-left: 2%;
-  text-decoration: none;
-  color: whitesmoke;
+  margin-left: 2%; /* asetetaan marginaali */
+  text-decoration: none; /* poistaa alleviivauksen */
+  color: whitesmoke; /* tekstin väri */
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { /* kun näytön leveys 600px... */
   header {
-    height: auto;
+    height: auto;/* ... muutetaan leveys */
   }
 }
 footer {
-  display: flex;
+  display: flex;/* muutetaan asettelu flexiksi */
   justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
-  padding: 20px; /*lisää tilaa footerin ympärille */
-  background-color: hsla(50, 3%, 20%, .65);
-  color: whitesmoke;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 20px; /* täyttö elementin sisällä */
+  background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
+  color: whitesmoke; /* tekstin väri */
+  margin-left: 10%; /* asetetaan marginaali */
+  margin-right: 10%; /* asetetaan marginaali */
 }
 footer address {
-  line-height: 0.2; /* säätää rivivälin koon */
-  text-align: left;}
+  line-height: 0.2; /* rivivälin koko */
+  text-align: left;  /* tasataan teksti vasemmalta */
+  }
 </style>
 </head>
 <body>
