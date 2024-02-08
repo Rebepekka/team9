@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Log in</title>
   <!-- Lisää Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
 </head>
 <body>
-  <div class="container">
+  <div class="login">
+    <h1>Login</h1>
+    <form action="authenticate.php" method="post">
+      <label for="username">
+        <i class="fas fa-user"></i>
+      </label>
+      <input type="text" name="username" placeholder="Username" id="username" required>
+      <label for="password">
+        <i class="fas fa-lock"></i>
+      </label>
+      <input type="password" name="password" placeholder="Password" id="password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  <!-- VANHA LOMAKE TÄSTÄ ALASPÄIN ----------------------------------------------------------->
+  <!-- <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-4">
         <h2>Kirjaudu sisään</h2>
@@ -24,8 +39,9 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Lisää Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+  <!-- VANHA LOMAKE TÄSTÄ YLÖSPÄIN --------------------------------------------------------------->
 </body>
 </html>
