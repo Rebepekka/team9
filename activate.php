@@ -1,8 +1,9 @@
 <?php
-$DATABASE_HOST = 'localhost';
+session_start();
+$DATABASE_HOST = 'shell';
 $DATABASE_USER = 'trtkp23_9';
 $DATABASE_PASS = 'VPnXTtqa';
-$DATABASE_NAME = 'web_trtkp23_9 ';
+$DATABASE_NAME = 'web_trtkp23_9';
 // Muodostetaan yhteys
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
