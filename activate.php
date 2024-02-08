@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 $DATABASE_HOST = 'shell';
 $DATABASE_USER = 'trtkp23_9';
 $DATABASE_PASS = 'VPnXTtqa';
@@ -31,4 +31,11 @@ if (isset($_GET['email'], $_GET['code'])) {
 		}
 	}
 }  
+// En tiiä tarviiko näitä
+// Jos haluamme tarkistaa, onko käyttäjä aktivoinut tilinsä, voimme lisätä seuraavan koodin sivuille, joilla haluamme rajoittaa aktivoimattomia käyttäjiä:
+if ($account['activation_code'] == 'activated') {
+
+} else {
+
+}
 ?>    
