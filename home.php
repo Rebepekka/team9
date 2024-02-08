@@ -3,7 +3,7 @@
 session_start();
 // Jos käyttäjä ei ole kirjautunut sisään, ohjataan kirjautumissivulle
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: membership1.html');
+	header('Location: membership.html');
 	exit;
 }
 ?>
