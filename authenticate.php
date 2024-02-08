@@ -1,4 +1,5 @@
 <?php
+session_start();
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'trtkp23_9';
 $DATABASE_PASS = 'VPnXTtqa';
