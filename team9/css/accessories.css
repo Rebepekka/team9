@@ -1,0 +1,40 @@
+body, h1, h2, p, nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font-family ja font-size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Kuvat */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer tyylit */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
