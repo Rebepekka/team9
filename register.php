@@ -10,13 +10,17 @@ if (mysqli_connect_errno()) { // Jos yhteydessä on virhe, pysäytä komentosarj
 }
 // Tarkistetaan onko tiedot lähetetty, isset () -toiminto tarkistaa, onko tiedot olemassa.
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
-// Jos ei saa lähetettyjä tietoja...
-exit('Please complete the registration form!');
+    // Jos ei saa lähetettyjä tietoja...
+    print "Please complete the <a href='./rekister.html'>registration</a> form!";
+    // exit('Please complete the registration form!');
+    exit();
 }
 // Varmistetaan, että lähetetyt rekisteröintiarvot eivät ole tyhjiä.
 if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {
     // Yksi tai useampi arvo on tyhjä...
-    exit('Please complete the registration form');
+    print "Please complete the <a href='./rekister.html'>registration</a> form!";
+    // exit('Please complete the registration form');
+    exit();
 }
 // Varmistetaan, että kaapattu syöttöarvo on sähköpostiosoite.
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
