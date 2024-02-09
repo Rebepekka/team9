@@ -6,7 +6,7 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: membership.html');
 	exit;
 }
-$DATABASE_HOST = 'shell';
+$DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'trtkp23_9';
 $DATABASE_PASS = 'VPnXTtqa';
 $DATABASE_NAME = 'web_trtkp23_9';
