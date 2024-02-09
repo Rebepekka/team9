@@ -15,29 +15,11 @@ if (!isset($_SESSION['loggedin'])) {
         <link href="css/homestyle.css" rel="stylesheet" type="text/css" />
 		<title>Home Page</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <style>
-	/* Headerin css:t ovat tässä, koska eivät toimi erillisestä tiedostosta käsin */
-	header { /* koko yläosa */
-	/*  position: relative;  elementinsijainti */
-	background-color: black; /* taustaväri */
-	display: flex; /* tehdään elementistä flex */
-	flex-direction: column; /* flex asettelu on sarake (pystysuora) */
-	align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
-	justify-content: center; /* tasataan elementit keskeltä vaakasuunnassa*/
-	font-weight: bolder; /* otsikon alatekstin fontin leveys paksu */
-	font-size: 30px; /* otsikon alatekstin fonttikoko */
-	margin-top: 1%; /* asetetaan marginaali */
-	margin-left: 10%; /* asetetaan marginaali */
-	margin-right: 10%; /* asetetaan marginaali */
-	color: whitesmoke; /* tekstin väri */
-	}
-	header img { /* yläosan kuva */
-	max-height: 50%; /* max-korkeus headerin korkeudesta*/
-	max-width: 50%; /* max-leveys headerin leveydestä */
-	  }
-	</style>
 	</head>
 	<body class="loggedin">
+	<header> <!-- Sivun yläosa (kuva ja musta tausta) -->
+    	<img src="images/etusivu_isokuva.jpg" title="Some title" alt="Gym">
+	</header>		
 		<nav class="navtop">
 			<div>
                 <!-- Linkit profiilitietoihin, uloskirjautumiseen ja muiden käyttäjien selaamiseen -->
