@@ -1,21 +1,3 @@
-header { /* koko yläosa */
-	/*  position: relative;  elementinsijainti */
-	background-color: black; /* taustaväri */
-	display: flex; /* tehdään elementistä flex */
-	flex-direction: column; /* flex asettelu on sarake (pystysuora) */
-	align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
-	justify-content: center; /* tasataan elementit keskeltä vaakasuunnassa*/
-	font-weight: bolder; /* otsikon alatekstin fontin leveys paksu */
-	font-size: 30px; /* otsikon alatekstin fonttikoko */
-	margin-top: 1%; /* asetetaan marginaali */
-	margin-left: 10%; /* asetetaan marginaali */
-	margin-right: 10%; /* asetetaan marginaali */
-	color: whitesmoke; /* tekstin väri */
-	}
-header img { /* yläosan kuva */
-	max-height: 50%; /* max-korkeus headerin korkeudesta*/
-	max-width: 50%; /* max-leveys headerin leveydestä */
-	  }
 .navtop {
 	background-color: black; /* taustaväri */
 	height: 60px; /* korkeus */
