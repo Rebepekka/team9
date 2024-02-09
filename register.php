@@ -43,7 +43,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // Tallenna tulos (store_result), jotta voimme tarkistaa, onko tili tietokannassa.
     if ($stmt->num_rows > 0) {
         // Jos tili on jo olemassa...
-        echo 'Username exists, please choose <a href='./rekister.html'>another</a>!';
+        print 'Username exists, please choose <a href='./rekister.html'>another</a>!';
 	} else {
     // Käyttäjätunnusta ei ole, lisää uusi tili.
     if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {   
