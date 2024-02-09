@@ -43,7 +43,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // Tallenna tulos (store_result), jotta voimme tarkistaa, onko tili tietokannassa.
     if ($stmt->num_rows > 0) {
         // Jos tili on jo olemassa...
-        echo 'Username exists, please choose another!';
+        echo 'Username exists, please choose <a href='./rekister.html'>another</a>!';
 	} else {
     // Käyttäjätunnusta ei ole, lisää uusi tili.
     if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {   
@@ -63,6 +63,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     $message = '<p>Please click the following link to activate your account: <a href="' . $activate_link . '">' . $activate_link . '</a></p>';
     mail($_POST['email'], $subject, $message, $headers);
     echo 'Please check your email to activate your account!';
+    echo '<a href='./mainpage.html'>Main page</a>!';
 } else {
     // SQL-lauseessa on jotain vikaa. On tarkistettava, että tilitaulukossa on kaikki kolme kenttää.
     echo 'Could not prepare statement!';
@@ -77,7 +78,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 $con->close();
 ?>
 <!-- Linkki, joka vie takaisin kirjautumissivulle (login.html). -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -87,4 +88,4 @@ $con->close();
 <body>
     <div><a href="login.html"><i class="fas fa-sign-out-alt"></i>Kirjautumissivulle</a></div>
 </body>
-</html>
+</html> -->
