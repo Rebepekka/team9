@@ -7,10 +7,11 @@ body, h1, h2, p, nav {
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    color: white;
 }
 
 header {
-    background-color: #f2f2f2;
+    background-color: black;
     padding: 20px;
     text-align: center;
 }
@@ -34,7 +35,7 @@ img {
 
 /* Footer tyylit */
 footer {
-    background-color: #f2f2f2;
+    background-color: red;
     padding: 20px;
     text-align: center;
 }
