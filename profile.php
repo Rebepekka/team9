@@ -55,7 +55,7 @@ $stmt->close();
 						<td>Email:</td>
 						<td><?=$email?></td>
 					</tr>
-				</table>
+				</table><br>
 				<div>
                     <!-- Päivitetään tiedot update_form.html -tiedostossa -->
 				<a href="update_form.html"><i class="fas fa-user-edit"></i><strong>Update information</strong></a> 
