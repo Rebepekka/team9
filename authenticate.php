@@ -1,11 +1,13 @@
 <?php
 session_start();
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'trtkp23_9';
-$DATABASE_PASS = 'VPnXTtqa';
-$DATABASE_NAME = 'web_trtkp23_9';
+// $DATABASE_HOST = 'localhost';
+// $DATABASE_USER = 'trtkp23_9';
+// $DATABASE_PASS = 'VPnXTtqa';
+// $DATABASE_NAME = 'web_trtkp23_9';
+$initials=parse_ini_file("./ht.settings.ini");
 // Muodostetaan yhteys.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+// $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+$con=mysqli_connect($initials["host"], $initials["user"], $initials["pass"], $initials["name"]);
 if ( mysqli_connect_errno() ) {
     // Jos yhteydessä on virhe, pysäytä komentosarja ja näytä virhe.   
     exit('Failed to connect to MySQL: ' . mysqli_connect_error());
