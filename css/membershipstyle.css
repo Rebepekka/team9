@@ -1,0 +1,81 @@
+header { 
+    display: flex; /* muutetaan asettelu flexiksi */
+    flex-direction: column; /* asettelu muuttuu pystysuunnaksi */
+    /* position: relative; */
+    background-color: rgb(129, 13, 13); /* taustaväri */
+    align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
+    justify-content: center; /* jakaa tilan tasaisesti elementtien välillä */
+    height: 35vh; /* korkeus */
+    margin-top: 1%; /* asetetaan marginaali */
+    margin-left: 10%; /* asetetaan marginaali */
+    margin-right: 10%; /* asetetaan marginaali */
+    color: whitesmoke; /* tekstin väri */
+}
+header h1 {
+    font-weight: bolder; /* otsikon fontin leveys paksu */
+    font-size: 60px; /* otsikon fontin koko */
+}
+body  {
+    background-color: black; /* taustaväri */
+}
+
+.teksti {
+    display: flex; /* muutetaan asettelu flexiksi */
+    flex-direction: column; /* asettelu muuttuu pystysuunnaksi */
+    text-align: left; /* tasataan teksti vasemmalta */
+    height: 33vh; /* korkeus */
+    font-size: 60px; /* fontin koko */
+    background-color: hsla(50, 3%, 50%, .65); /* taustaväri */
+    padding: 0.1em; /* täyttö elementin sisällä */
+    color: whitesmoke; /* tekstin väri */
+    margin-left: 10%; /* asetetaan marginaali */
+    margin-right: 10%; /* asetetaan marginaali */
+    margin-bottom: 1%; /* asetetaan marginaali */
+    margin-top: 1%; /* asetetaan marginaali */
+}
+.teksti h1 {
+    font-weight: bolder; /* fontin leveys */
+    font-size: 40px; /* fontin koko */
+    margin-left: 2%; /* asetetaan marginaali */
+    margin-top: 2%; /* asetetaan marginaali */
+}
+.teksti p {
+    font-weight: bolder; /* fontin leveys */
+    font-size: 30px; /* fontin koko */
+    margin-left: 2%; /* asetetaan marginaali */
+}
+.teksti a {
+  margin-left: 2%; /* asetetaan marginaali */
+  text-decoration: none; /* poistaa alleviivauksen */
+  color: whitesmoke; /* tekstin väri */
+}
+@media screen and (max-width: 600px) { /* kun näytön leveys 600px... */
+  header {
+    height: auto;/* ... muutetaan leveys */
+  }
+}
+footer {
+  display: flex;/* muutetaan asettelu flexiksi */
+  justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
+  padding: 20px; /* täyttö elementin sisällä */
+  background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
+  color: whitesmoke; /* tekstin väri */
+  margin-left: 10%; /* asetetaan marginaali */
+  margin-right: 10%; /* asetetaan marginaali */
+}
+footer address {
+  line-height: 0.2; /* rivivälin koko */
+  text-align: left;  /* tasataan teksti vasemmalta */
+  }
+  a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    font-size: xx-large;
+    border-style: solid;
+    justify-content: space-between;
+    margin-left: 28%;
+
+    text-decoration: none;
+    color: white;
+}
