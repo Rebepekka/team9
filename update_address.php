@@ -7,7 +7,6 @@ if(!isset($_SESSION['loggedin'])) {
     exit;
 }
 // Muodosta yhteys tietokantaan
-// $mysqli = new mysqli('localhost', 'trtkp23_9', 'VPnXTtqa', 'web_trtkp23_9');
 $mysqli = new mysqli($initials["host"], $initials["user"], $initials["pass"], $initials["name"]);
 // Tarkistaa, onnistuiko yhteyden muodostaminen
 if ($mysqli->connect_error) {
