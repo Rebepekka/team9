@@ -2,5 +2,5 @@
 session_start();
 session_destroy();
 // Ohjataan kirjautumissivulle
-header('Location: membership.html');
+header('Location: mainpage.html');
 ?>
