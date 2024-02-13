@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Manage Accounts</title>
+    <!-- Lisätään yhteys css fileen -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>Manage Accounts</h2> 
+    
+    <!--Näyttää käyttäjälle tiedot poistamisesta --> 
+    <?php
+    if (isset($_GET['success']) && $_GET['success'] == 1) {
+        echo "<p style='color:green;'>User account deleted successfully</p>";
+    } elseif (isset($_GET['error']) && $_GET['error'] == 1) {
+        echo "<p style='color:red;'>Failed to delete user account. Please try again</p>";
+    }
+    ?>
+
+    <!-- Luo luettelomaisen rakenteen -->
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <?php
+        <!--  Näytä käyttäjät ja vaihtoehto poistaa ne -->
+        $users = getAllUsers(); 
+        foreach ($users as $user) {
+            echo "<tr>";
+            echo "<td>{$user['username']}</td>";
+            echo "<td>{$user['email']}</td>";
+            echo "<td>
+                    <form method='post' action='manage_accounts.php'>
+                        <input type='hidden' name='user_id' value='{$user['id']}'>
+                        <button type='submit' name='delete_user'>Delete</button>
+                    </form>
+                  </td>";
+            echo "</tr>";
+        }
+        ?>
+    </table>
+</body>
+</html>
