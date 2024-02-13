@@ -29,13 +29,14 @@ $stmt->close();
 		<title>Profile Page</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	</head>
-	<body class="loggedin">
+	<body>
+	<header></header>
 		<nav class="navtop">
 			<div>
 				<h1>Profile Page</h1>
                 <!-- Linkit uloskirjautumiseen ja etusivulle -->
-                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
-				<a href="home.php"><i class="fas fa-sign-out-alt"></i>Etusivulle</a>
+                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Log out</a>
+				<a href="home.php"><i class="fas fa-user-circle"></i>Home</a>
 				<!--  Näytä Manage Users linkki vaan jos kirjautunut sisään pääkäyttäjällä Heta-->
 				<?php if (isAdmin()): ?>
             <a href="manage_accounts.php"><i class="fas fa-user-cog"></i>Manage Users</a>

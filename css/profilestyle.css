@@ -1,17 +1,22 @@
+header {
+    background-color: black;
+    margin-left: 20%; /* asetetaan marginaali */
+    margin-right: 20%; /* asetetaan marginaali */
+    height: 200px;
+}
 .navtop {
     background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
     padding: 0.1em; /* täyttö elementin sisällä */
     color: whitesmoke; /* tekstin väri */
-    margin-left: 10%; /* asetetaan marginaali */
-    margin-right: 10%; /* asetetaan marginaali */
+    margin-left: 20%; /* asetetaan marginaali */
+    margin-right: 20%; /* asetetaan marginaali */
     margin-bottom: 1%; /* asetetaan marginaali */
 }
-
 .navtop a {
     margin-left: 2%; /* asetetaan marginaali */
     font-size: large; /* fonttikoko suuri */
     padding: 0 20px; /* täyte elementin sisällä */
-    color: rgb(223, 223, 243); /* tekstin väri */
+    color: rgb(194, 192, 192); /* tekstin väri */
     text-decoration: none; /* poistaa alleviivauksen */
 }
 .navtop a, i {
@@ -29,9 +34,9 @@ body {
     background-color: hsla(50, 3%, 1%, .95); /* taustaväri */
 }
 .content {
-    background-color: gray; /* taustaväri */
-    margin-left: 10%; /* asetetaan marginaali */
-    margin-right: 10%; /* asetetaan marginaali */
+    background-color: rgb(194, 192, 192); /* taustaväri */
+    margin-left: 20%; /* asetetaan marginaali */
+    margin-right: 20%; /* asetetaan marginaali */
     padding-top: 0.5%;
     padding-bottom: 1.5%;
 }
@@ -42,4 +47,10 @@ body {
     margin-left: 2%;
     font-size: large;
     color: black;
+}
+footer {
+    background-color: black;
+    margin-left: 20%; /* asetetaan marginaali */
+    margin-right: 20%; /* asetetaan marginaali */
+    height: 400px;
 }
