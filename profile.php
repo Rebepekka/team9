@@ -37,6 +37,11 @@ $stmt->close();
                 <!-- Linkit uloskirjautumiseen ja etusivulle -->
                 <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 				<a href="home.php"><i class="fas fa-sign-out-alt"></i>Etusivulle</a>
+				<!--  Näytä Manage Users linkki vaan jos kirjautunut sisään pääkäyttäjällä Heta-->
+				<?php if (isAdmin()): ?>
+            <a href="manage_accounts.php"><i class="fas fa-user-cog"></i>Manage Users</a>
+        <?php endif; ?>
+
 			</div>
 		</nav>
 		<div class="content">
