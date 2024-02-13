@@ -7,8 +7,8 @@ header {
     justify-content: center; /* jakaa tilan tasaisesti elementtien välillä */
     height: 35vh; /* korkeus */
     margin-top: 1%; /* asetetaan marginaali */
-    margin-left: 10%; /* asetetaan marginaali */
-    margin-right: 10%; /* asetetaan marginaali */
+    margin-left: 15%; /* asetetaan marginaali */
+    margin-right: 15%; /* asetetaan marginaali */
     color: whitesmoke; /* tekstin väri */
 }
 header h1 {
@@ -21,15 +21,15 @@ body  {
 
 .teksti {
     display: flex; /* muutetaan asettelu flexiksi */
-    flex-direction: column; /* asettelu muuttuu pystysuunnaksi */
+    flex-wrap: wrap; /* tasainen sijoittelu */
     text-align: left; /* tasataan teksti vasemmalta */
     height: 33vh; /* korkeus */
     font-size: 60px; /* fontin koko */
     background-color: hsla(50, 3%, 50%, .65); /* taustaväri */
     padding: 0.1em; /* täyttö elementin sisällä */
     color: whitesmoke; /* tekstin väri */
-    margin-left: 10%; /* asetetaan marginaali */
-    margin-right: 10%; /* asetetaan marginaali */
+    margin-left: 15%; /* asetetaan marginaali */
+    margin-right: 15%; /* asetetaan marginaali */
     margin-bottom: 1%; /* asetetaan marginaali */
     margin-top: 1%; /* asetetaan marginaali */
 }
