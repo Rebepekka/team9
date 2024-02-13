@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/loginstyle.css" rel="stylesheet" type="text/css" />
         <title>Päivityslomake</title>
     </head>
     <body> 
+        <div class="login">
+            <h1>Provide a new username and email address.</h1>
         <form action="update_address.php" method="post">
-		<label for="username">Käyttäjätunnus:</label><br>
-        <input type="text" name="username" value=""><br>
-        <label for="email">Sähköposti:</label><br>
-        <input type="text" name="email" value=""><br>
-        <input type="submit" name="ok" value="Päivitä tiedot">
+            <label for="username"><i class="fas fa-user"></i></label>
+        <input type="text" name="username" value="New username"><br>
+            <label for="email"><i class="fa-solid fa-envelope"></i></label>
+        <input type="text" name="email" value="New email"><br>
+        <input type="submit" name="ok" value="Update">
         </form>
+        </div>
     </body>
 </html>
