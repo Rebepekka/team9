@@ -4,11 +4,11 @@
     font-size: 16px;
 }
 body {
-    background-color: #435165;
+    background-color: hsla(50, 3%, 1%, .95);
 }
 .login {
     width: 400px;
-    background-color: #ffffff;
+    background-color: rgb(194, 192, 192);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 100px auto;
 }
@@ -17,7 +17,9 @@ body {
     color: #5b6574;
     font-size: 24px;
     padding: 20px 0 20px 0;
-    border-bottom: 1px solid #dee0e4;
+    border-bottom: 1px solid #e1e1e1;
+    margin-left: 5px;
+    margin-right: 5px;  
 }
 .login form {
     display: flex;
@@ -31,28 +33,28 @@ body {
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #3274d6;
-    color: #ffffff;
+    background-color: rgb(129, 13, 13);
+    color: #e1e1e1;
 }
 .login form input[type="password"], .login form input[type="text"] {
     width: 310px;
     height: 50px;
-    border: 1px solid #dee0e4;
+    border: 1px solid #e1e1e1;
     margin-bottom: 20px;
     padding: 0 15px;
 }
 .login form input[type="submit"] {
     width: 100%;
     padding: 15px;
-   margin-top: 20px;
-    background-color: #3274d6;
+    margin-top: 20px;
+    background-color: rgb(129, 13, 13);
     border: 0;
     cursor: pointer;
     font-weight: bold;
-    color: #ffffff;
+    color: #e1e1e1;
     transition: background-color 0.2s;
 }
 .login form input[type="submit"]:hover {
-  background-color: #2868c7;
+  background-color: hsla(50, 3%, 20%, .65);
     transition: background-color 0.2s;
 } 
