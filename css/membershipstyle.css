@@ -44,30 +44,42 @@ body  {
     font-size: 30px; /* fontin koko */
     margin-left: 2%; /* asetetaan marginaali */
 }
-.teksti a {
-  margin-left: 2%; /* asetetaan marginaali */
-  text-decoration: none; /* poistaa alleviivauksen */
-  color: whitesmoke; /* tekstin väri */
+.puttom {
+    background-color: hsla(50, 3%, 50%, .65); /* taustaväri */
+    margin-left: 15%; /* asetetaan marginaali */
+    margin-right: 15%; /* asetetaan marginaali */
+    margin-bottom: 1%;
+    font-weight: bolder; /* fontin leveys */
+    font-size: 30px; /* fontin koko */
+    padding: 0 30px;
+    height: 13vh; /* korkeus */
+}
+.puttom a, i {
+    padding: 0 1%;
+    color: whitesmoke; /* tekstin väri */
+    text-decoration: none; /* poistaa alleviivauksen */
+    margin-top: 3%;
 }
 @media screen and (max-width: 600px) { /* kun näytön leveys 600px... */
-  header {
+  header, .teksti, .puttom, footer { 
     height: auto;/* ... muutetaan leveys */
   }
 }
 footer {
   display: flex;/* muutetaan asettelu flexiksi */
+  flex-wrap: wrap;
   justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
   padding: 20px; /* täyttö elementin sisällä */
   background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
   color: whitesmoke; /* tekstin väri */
-  margin-left: 10%; /* asetetaan marginaali */
-  margin-right: 10%; /* asetetaan marginaali */
+  margin-left: 15%; /* asetetaan marginaali */
+  margin-right: 15%; /* asetetaan marginaali */
 }
 footer address {
   line-height: 0.2; /* rivivälin koko */
   text-align: left;  /* tasataan teksti vasemmalta */
   }
-  a.button {
+  /* a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -78,4 +90,4 @@ footer address {
 
     text-decoration: none;
     color: white;
-}
+} */
