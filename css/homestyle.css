@@ -8,8 +8,8 @@ header { /* koko yläosa */
 	font-weight: bolder; /* otsikon alatekstin fontin leveys paksu */
 	font-size: 30px; /* otsikon alatekstin fonttikoko */
 	margin-top: 1%; /* asetetaan marginaali */
-	margin-left: 10%; /* asetetaan marginaali */
-	margin-right: 10%; /* asetetaan marginaali */
+	margin-left: 15%; /* asetetaan marginaali */
+	margin-right: 15%; /* asetetaan marginaali */
 	color: whitesmoke; /* tekstin väri */
 	}
 header img { /* yläosan kuva */
@@ -20,8 +20,8 @@ header img { /* yläosan kuva */
 	background-color: black; /* taustaväri */
 	height: 60px; /* korkeus */
 	border: 0; /* reuna/raja */
-	margin-left: 10%; /* asetetaan marginaali */
-	margin-right: 10%; /* asetetaan marginaali */
+	margin-left: 15%; /* asetetaan marginaali */
+	margin-right: 15%; /* asetetaan marginaali */
 	}
 .navtop div {
 	display: flex;
@@ -49,8 +49,8 @@ header img { /* yläosan kuva */
     background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
     padding: 0.1em; /* täyttö elementin sisällä */
     color: whitesmoke; /* tekstin väri */
-    margin-left: 10%; /* asetetaan marginaali */
-    margin-right: 10%; /* asetetaan marginaali */
+    margin-left: 15%; /* asetetaan marginaali */
+    margin-right: 15%; /* asetetaan marginaali */
     margin-bottom: 1%; /* asetetaan marginaali */
 }
 .eka p {
@@ -73,13 +73,13 @@ body {
     display: flex; /* muutetaan asettelu flexiksi */
     flex-wrap: wrap; /* tasainen sijoittelu */
     justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
-    padding: 0 10%; /* täyttö elementin sisällä  */
+    padding: 0 15%; /* täyttö elementin sisällä  */
   }
 .row {
     display: flex; /* muutetaan asettelu flexiksi */
     /* flex-direction: row-reverse; */
     align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
-    width: calc(40% - 20px); /* leveys */
+    width: calc(48% - 20px); /* leveys */
     height: 200px; /* korkeus */
     margin-bottom: 20px; /* asetetaan marginaali */
     background-color: gray; /* taustaväri */
@@ -90,7 +90,9 @@ body {
  /*   object-fit: cover; sovitus elementin kokoon, säilytetään kuvasuhde */
     order: 2; /* sijoittelu tokana */
 }
-.text {
+.text {    
+    display: flex; /* muutetaan asettelu flexiksi */
+    flex-wrap: wrap; /* tasainen sijoittelu */
     margin-right: 20px; /* asetetaan marginaali */
     order: 1; /* sijoittelu ekana */
     margin-left: 30px; /* asetetaan marginaali */
@@ -107,12 +109,13 @@ body {
 }
 footer {
   display: flex; /* muutetaan asettelu flexiksi */
+  flex-wrap: wrap;
   justify-content: space-between; /* jakaa tilan tasaisesti elementtien välillä */
   padding: 20px; /* täyttö elementin sisällä  */
   background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
   color: whitesmoke; /* tekstin väri */
-  margin-left: 10%; /* asetetaan marginaali */
-  margin-right: 10%; /* asetetaan marginaali */
+  margin-left: 15%; /* asetetaan marginaali */
+  margin-right: 15%; /* asetetaan marginaali */
 }
 footer address {
   line-height: 0.2; /* rivivälin koko */
