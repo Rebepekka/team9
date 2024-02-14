@@ -1,6 +1,6 @@
 <?php
 session_start();
-$initials=parse_ini_file("./ht.settings.ini");
+$initials=parse_ini_file("./.ht.settings.ini");
 // Muodostetaan yhteys
 $con=mysqli_connect($initials["host"], $initials["user"], $initials["pass"], $initials["name"]);
 if (mysqli_connect_errno()) {

@@ -1,6 +1,6 @@
 <?php
 session_start(); // Aloita istunto
-$initials=parse_ini_file("./ht.settings.ini");
+$initials=parse_ini_file("./.ht.settings.ini");
 // Tarkista, onko käyttäjä kirjautunut sisään
 if(!isset($_SESSION['loggedin'])) {
     echo "Kirjaudu sisään päivittääksesi osoitetietosi.";
