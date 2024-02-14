@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/otherusersstyle.css" rel="stylesheet" type="text/css" />
+	<title>Document</title>
+</head>
+<body>
+	<header></header>
+	<div class="text">
+		<h2>Other users</h2>
+	</div>
+
+	<div class="users">
+
 <?php
 session_start();
 $initials=parse_ini_file("./ht.settings.ini");
@@ -22,6 +38,9 @@ if ($stmt = $con->prepare('SELECT username FROM accounts')) {
 } else {
 	echo 'Could not prepare statement!';
 }
-
 $con->close();
 ?>
+
+	</div>
+</body>
+</html>
