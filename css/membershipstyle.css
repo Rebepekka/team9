@@ -23,7 +23,7 @@ body  {
     display: flex; /* muutetaan asettelu flexiksi */
     flex-wrap: wrap; /* tasainen sijoittelu */
     text-align: left; /* tasataan teksti vasemmalta */
-    height: 33vh; /* korkeus */
+    height: 24vh; /* korkeus */
     font-size: 60px; /* fontin koko */
     background-color: hsla(50, 3%, 50%, .65); /* taustaväri */
     padding: 0.1em; /* täyttö elementin sisällä */
@@ -40,9 +40,11 @@ body  {
     margin-top: 2%; /* asetetaan marginaali */
 }
 .teksti p {
+    text-align: center;
     font-weight: bolder; /* fontin leveys */
     font-size: 30px; /* fontin koko */
     margin-left: 2%; /* asetetaan marginaali */
+    margin-right: 2%;
 }
 .puttom {
     background-color: hsla(50, 3%, 50%, .65); /* taustaväri */
@@ -52,7 +54,7 @@ body  {
     font-weight: bolder; /* fontin leveys */
     font-size: 30px; /* fontin koko */
     padding: 0 30px;
-    height: 13vh; /* korkeus */
+    height: 11vh; /* korkeus */
 }
 .puttom a, i {
     padding: 0 1%;
