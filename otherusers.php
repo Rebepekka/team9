@@ -9,7 +9,7 @@
 <body>
 	<header></header>
 	<div class="text">
-		<h2>Other users</h2>
+		<h1>Other users</h1>
 	</div>
 
 	<div class="users">
