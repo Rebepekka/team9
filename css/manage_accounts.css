@@ -31,12 +31,7 @@ h2 {
     z-index: 999; 
 }
 
-p {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-    color: #eee8e8;
-}
+
 
 button {
     display: block;
