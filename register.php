@@ -10,14 +10,14 @@ if (mysqli_connect_errno()) { // Jos yhteydessä on virhe, pysäytä komentosarj
 // Tarkistetaan onko tiedot lähetetty, isset () -toiminto tarkistaa, onko tiedot olemassa.
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
     // Jos ei saa lähetettyjä tietoja...
-    print "Please complete the <a href='./rekister.html'>registration</a> form!";
-    // exit('Please complete the registration form!');
+    print "Please complete the <a href='./register.html'>registration</a> form!";
+    // exit('Please complete the registration form!'); 
     exit();
 }
 // Varmistetaan, että lähetetyt rekisteröintiarvot eivät ole tyhjiä.
 if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {
     // Yksi tai useampi arvo on tyhjä...
-    print "Please complete the <a href='./rekister.html'>registration</a> form!";
+    print "Please complete the <a href='./register.html'>registration</a> form!";
     // exit('Please complete the registration form');
     exit();
 }
@@ -42,7 +42,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // Tallenna tulos (store_result), jotta voimme tarkistaa, onko tili tietokannassa.
     if ($stmt->num_rows > 0) {
         // Jos tili on jo olemassa...
-        print "Username exists, please choose <a href='./rekister.html'>another</a>!";
+        print "Username exists, please choose <a href='./register.html'>another</a>!";
 	} else {
     // Käyttäjätunnusta ei ole, lisää uusi tili.
     if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {   
