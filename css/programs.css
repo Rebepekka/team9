@@ -34,6 +34,7 @@ h2 {
     z-index: 999; 
 }
 
+/* Tekstien koko, väri, paikka*/
 p {
     text-align: center;
     font-size: 18px;
@@ -41,6 +42,7 @@ p {
     color: #eee8e8;
 }
 
+/* Nappi (molemmat) */
 button {
     display: block;
     margin: 0 auto;
@@ -52,15 +54,18 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 /* Nappi muuttuu mustaksi kun hiiren laittaa sen päälle */
 button:hover {
     background-color: #000000;
 }
 
+/* Ei toimi */
 #Vastaus {
     margin-top: 20px;
     text-align: center;
 }
+
 
 .image-container {
     display: flex;
