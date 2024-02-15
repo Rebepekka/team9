@@ -66,13 +66,14 @@ button:hover {
     text-align: center;
 }
 
-
+/* Kuvien asettelu */
 .image-container {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
+/* Kuvien asettelu (border-color ei näy)*/
 .image-container img {
     width: 300px;
     height: auto;
