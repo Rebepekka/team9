@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
+
+   <!-- sivun otsikko ja linkit muihin tiedostoihin --> 
 <head>
     <meta charset="utf-8">
     <title>Manage Accounts</title>
     <!-- Lisätään yhteys css fileen -->
     <link rel="stylesheet" href="css/manage_accounts.css">
 </head>
+
+    <!-- Sivullä näkyvä osuus --> 
 <body>
-    <h2>Manage Accounts</h2> 
+        <h2>Manage Accounts</h2> 
     
-    <!--Näyttää käyttäjälle tiedot poistamisesta --> 
-    <?php
-    if (isset($_GET['success']) && $_GET['success'] == 1) 
+        <!--Näyttää käyttäjälle tiedot poistamisesta (ei toiminut, poistin osan koodista)--> 
+        <?php
+        if (isset($_GET['success']) && $_GET['success'] == 1) 
         <p >User account deleted successfully</p>
         <p >Failed to delete user account. Please try again</p>
     
 
-    <!-- Luo luettelomaisen rakenteen -->
+        <!-- Luo luettelomaisen rakenteen -->
     <table>
-        <tr>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Action</th>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Action</th>
         </tr>
 
         <!-- Näytä käyttäjät ja vaihtoehto poistaa ne (alempana siis, en saa kommentoitua)--> 
