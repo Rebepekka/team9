@@ -57,10 +57,12 @@ th {
     color: white;
 }
 
+/* Teksti */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+/* Otsikon takana oleva musta osa*/
 h2 {
     text-align: center;
     margin-top: 20px;
