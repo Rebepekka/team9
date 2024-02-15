@@ -29,16 +29,16 @@
         <?php
         $users = getAllUsers(); 
         foreach ($users as $user) {
-             "<tr>";
-             "<td>{$user['username']}</td>";
-             "<td>{$user['email']}</td>";
-             "<td>
+             <tr>
+             <td>{$user['username']}</td>
+             <td>{$user['email']}</td>
+             <td>
                     <form method='post' action='manage_accounts.php'>
                         <input type='hidden' name='user_id' value='{$user['id]}>
                         <button type='submit' name='delete_user'>Delete</button>
                     </form>
-                  </td>";
-            echo "</tr>";
+                  </td>
+            </tr>
         }
         ?>
     </table>
