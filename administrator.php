@@ -55,9 +55,9 @@ function isAdmin() {
         }
 }
 
-// Katsotaan onko käyttäjä kirjautunut sisään 
+// Tarkoitus siis että, katsotaan onko käyttäjä kirjautunut sisään pääkäyttäjällä ja jos on, näytöllä teksti tervetuloa
 if (isset($_SESSION['username'])) {
-    echo "Welcome " . $_SESSION['username'];
+    echo "Welcome Administrator " . $_SESSION['username'];
     if (isAdmin()) {
     echo " (Administrator)"; 
     }
