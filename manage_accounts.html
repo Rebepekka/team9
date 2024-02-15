@@ -28,7 +28,7 @@
         <!-- Näytä käyttäjät ja vaihtoehto poistaa ne (alempana siis, en saa kommentoitua)--> 
         <?php
         $users = getAllUsers();
-        foreach ($users as $user) {
+        foreach ($users as $user)
              <tr>
              <td>{$user['username']}</td>
              <td>{$user['email']}</td>
@@ -39,8 +39,7 @@
                     </form>
                   </td>
             </tr>
-        }
-    
+        
     </table>
 </body>
 </html>
