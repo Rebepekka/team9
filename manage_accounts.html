@@ -12,7 +12,7 @@
     <!--Näyttää käyttäjälle tiedot poistamisesta --> 
     <?php
     if (isset($_GET['success']) && $_GET['success'] == 1) {
-        <p style='color:green;'>User account deleted successfully</p>";
+        <p style='color:green;'>User account deleted successfully</p>
     <p style='color:red;'>Failed to delete user account. Please try again</p>";
     }
     ?>
@@ -29,10 +29,10 @@
         <?php
         $users = getAllUsers(); 
         foreach ($users as $user) {
-            echo "<tr>";
-            echo "<td>{$user['username']}</td>";
-            echo "<td>{$user['email']}</td>";
-            echo "<td>
+             "<tr>";
+             "<td>{$user['username']}</td>";
+             "<td>{$user['email']}</td>";
+             "<td>
                     <form method='post' action='manage_accounts.php'>
                         <input type='hidden' name='user_id' value='{$user['id]}>
                         <button type='submit' name='delete_user'>Delete</button>
