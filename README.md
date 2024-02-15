@@ -4,6 +4,7 @@
 <li>mainpage.html</li>
 <li>membership.html</li>
 <li>login.html</li>
+<li>logout.php</li>
 <li>home.php</li>
 <li>profile.php</li>
 <li>update_form.php</li>
