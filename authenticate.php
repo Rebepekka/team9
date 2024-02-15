@@ -35,10 +35,12 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     } else {
         // Väärä salasana...
         echo 'Incorrect username and/or password!';
+        echo "<a href='./login.html'> Get back</a>";
     }
 } else {
     // Väärä käyttäjänimi...
-    echo 'Incorrect username and/or password!';    
+    echo 'Incorrect username and/or password!';
+    echo "<a href='./login.html'> Get back</a>";    
     
     $stmt->close();
 }
