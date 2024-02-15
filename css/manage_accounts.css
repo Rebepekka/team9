@@ -38,13 +38,14 @@ button:hover {
     background-color: #000000;
 }
 
-
+/* Asettaa palkit alemmas ja yhteen */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
+/* Palkkien sisällä oleva teksti */
 th, td {
     padding: 10px;
     text-align: left;
