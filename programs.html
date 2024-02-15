@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="programs.css">
 </head>
 <body>
     <h2>Testataan Ajaxia tällä sivulla väliaikaisesti</h2>
@@ -16,6 +17,15 @@
         <!-- Txt tiedostosta saadut tiedot näkyvät "Vastaus" kohdassa -->    
         <div id="Vastaus"></div>
 
+        <!-- Lisään pari kuvaa sivulle --> 
+        <div class="image-container">
+            <img src="Kuvat/säkki.jpg" alt="säkki">
+            <img src="Kuvat/nostaa.jpg" alt="nostaa">
+            <img src="Kuvat/Painot.jpg" alt="Painot">
+        </div>
+
+        <a href="index.html" class="back-to-main">Back to Main Page</a>
+
 <!-- Lisätään javascript Ajaxin takia --> 
 <script>
     function lataaTiedosto() {
@@ -25,9 +35,22 @@
                 document.getElementById("Vastaus").innerHTML = this.responseText;
             } 
         };
-        xhttp.open("GET", "txt tiedosto ajaxille.txt", true);
+        xhttp.open("GET", "Starting Strength aloittelijoille.txt", true);
         xhttp.send();
     }
+</script>
+
+<!--jQuery load -funktio hinnan saamiseksi--> 
+<p>By clicking this button you can see your discount from your first program!</p>
+<p id="Hinta">Discount appears here</p>
+<button id="nappi">Lataa</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+            $("#nappi").click(function(){
+                $("#Hinta").load("hinta.txt");
+            });
+        });
 </script>
 
 </body>
