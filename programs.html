@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Sivu ei ole saatavilla</h2>
+    <h2>Testataan Ajaxia tällä sivulla väliaikaisesti</h2>
+    
+        <p>Clicking here you can see which program you should try!</p>
+
+        <!-- Lisätään nappi, joka tuo tietoa txtstä-->
+        <button onclick="lataaTiedosto()">Click this</button>
+
+        <!-- Txt tiedostosta saadut tiedot näkyvät "Vastaus" kohdassa -->    
+        <div id="Vastaus"></div>
+
+<!-- Lisätään javascript Ajaxin takia --> 
+<script>
+    function lataaTiedosto() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("Vastaus").innerHTML = this.responseText;
+            } 
+        };
+        xhttp.open("GET", "txt tiedosto ajaxille.txt", true);
+        xhttp.send();
+    }
+</script>
+
 </body>
 </html>
