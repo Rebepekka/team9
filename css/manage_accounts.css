@@ -1,3 +1,4 @@
+/* Sivun taustaväri ja yleinen fontti */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,32 +6,21 @@ body {
     background-color: #373535;
 }
 
+/* Teksti keskelle */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Otsikon koko, väri ja paikka */
 h2 {
     text-align: center;
     margin-top: 20px;
     color: #edebeb;
 }
 
-.back-to-main {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    padding: 10px 20px;
-    background-color: #800c0c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    z-index: 999; 
-}
-
+/* Delete nappi */
 button {
     display: block;
     margin: 0 auto;
@@ -43,9 +33,11 @@ button {
     cursor: pointer;
 }
 
+/* Nappi muuttuu mustaksi kun hiiri on sen päällä */
 button:hover {
     background-color: #000000;
 }
+
 
 table {
     width: 100%;
@@ -59,6 +51,7 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
+/* Punainen palkki */
 th {
     background-color: #800c0c;
     color: white;
