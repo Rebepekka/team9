@@ -1,5 +1,3 @@
-programs.css
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,6 +16,7 @@ h2 {
     margin-top: 20px;
     color: #edebeb;
 }
+/* Nappi joka vie takaisin pääsivulle */
 .back-to-main {
     position: fixed;
     top: 30px;
@@ -50,7 +49,7 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-
+/* Nappi muuttuu mustaksi kun hiiren laittaa sen päälle */
 button:hover {
     background-color: #000000;
 }
@@ -71,4 +70,5 @@ button:hover {
     height: auto;
     margin: 0 10px;
     border-radius: 5px;
+    border-color: #000000;
 }
