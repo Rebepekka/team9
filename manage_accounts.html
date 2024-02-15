@@ -26,19 +26,20 @@
                 <th>Username</th>
                 <th>Email</th>
                 <th>Action</th>
-        </tr>
+            </tr>
 
-        <!-- Näytä käyttäjät ja vaihtoehto poistaa ne (alempana siis, en saa kommentoitua)--> 
+        <!-- Näytä käyttäjät ja vaihtoehto poistaa ne (ei toiminut)--> 
         <?php 
         $users = getAllUsers();
         foreach ($users as $user)
+         <!-- Pitäisi näyttää tietokannasta haettu data --> 
              <tr>
              <td>(käyttäjän nimi)</td>
              <td>(käyttäjän sähköpostiosoite)</td>
              <td>
                     <form method='post' action='manage_accounts.php'>
-                        <input type='hidden' name='user_id' value='{$user['id]}>
-                        <button type='submit' name='delete_user'>Delete</button>
+                    <input type='hidden' name='user_id' value='{$user['id]}>
+                    <button type='submit' name='delete_user'>Delete</button>
                     </form>
              </td>
              </tr>
