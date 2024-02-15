@@ -1,3 +1,4 @@
+/* Sivun taustaväri ja yleinen fontti */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,12 +6,14 @@ body {
     background-color: #373535;
 }
 
+/* Teksti keskelle */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Otsikon koko, väri ja paikka */
 h2 {
     text-align: center;
     margin-top: 20px;
