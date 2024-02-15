@@ -11,11 +11,10 @@
     
     <!--Näyttää käyttäjälle tiedot poistamisesta --> 
     <?php
-    if (isset($_GET['success']) && $_GET['success'] == 1) {
+    if (isset($_GET['success']) && $_GET['success'] == 1) 
         <p style='color:green;'>User account deleted successfully</p>
-    <p style='color:red;'>Failed to delete user account. Please try again</p>
-    }
-
+        <p style='color:red;'>Failed to delete user account. Please try again</p>
+    
 
     <!-- Luo luettelomaisen rakenteen -->
     <table>
@@ -26,7 +25,7 @@
         </tr>
 
         <!-- Näytä käyttäjät ja vaihtoehto poistaa ne (alempana siis, en saa kommentoitua)--> 
-        <?php
+        <?php 
         $users = getAllUsers();
         foreach ($users as $user)
              <tr>
@@ -37,8 +36,8 @@
                         <input type='hidden' name='user_id' value='{$user['id]}>
                         <button type='submit' name='delete_user'>Delete</button>
                     </form>
-                  </td>
-            </tr>
+             </td>
+             </tr>
         
     </table>
 </body>
