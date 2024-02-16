@@ -1,3 +1,4 @@
+/* Sivun taustaväri ja yleinen fontti */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,12 +6,14 @@ body {
     background-color: #373535;
 }
 
+/* Teksti keskelle */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Otsikon koko, väri ja paikka */
 h2 {
     text-align: center;
     margin-top: 20px;
@@ -31,6 +34,7 @@ h2 {
     z-index: 999; 
 }
 
+/* Tekstien koko, väri, paikka*/
 p {
     text-align: center;
     font-size: 18px;
@@ -38,6 +42,7 @@ p {
     color: #eee8e8;
 }
 
+/* Nappi (molemmat) */
 button {
     display: block;
     margin: 0 auto;
@@ -49,22 +54,26 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 /* Nappi muuttuu mustaksi kun hiiren laittaa sen päälle */
 button:hover {
     background-color: #000000;
 }
 
+/* Ei toimi */
 #Vastaus {
     margin-top: 20px;
     text-align: center;
 }
 
+/* Kuvien asettelu */
 .image-container {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
+/* Kuvien asettelu (border-color ei näy)*/
 .image-container img {
     width: 300px;
     height: auto;

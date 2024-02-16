@@ -1,49 +1,74 @@
+/* Sivun taustaväri ja yleinen fontti */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
     margin: 0;
     padding: 0;
+    background-color: #373535;
 }
 
+/* Teksti keskelle */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Otsikon koko, väri ja paikka */
 h2 {
-    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+    color: #edebeb;
 }
 
+/* Delete nappi */
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #800c0c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Nappi muuttuu mustaksi kun hiiri on sen päällä */
+button:hover {
+    background-color: #000000;
+}
+
+/* Asettaa palkit alemmas ja yhteen */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-table th, table td {
+/* Palkkien sisällä oleva teksti */
+th, td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
 }
 
+/* Punainen palkki */
 th {
-    background-color: #222;
+    background-color: #800c0c;
+    color: white;
 }
 
-td {
-    background-color: #333;
+/* Teksti */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-button {
-    padding: 5px 10px;
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #cc0000;
+/* Otsikon takana oleva musta osa*/
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #edebeb;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
