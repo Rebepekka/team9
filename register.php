@@ -36,9 +36,9 @@ if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
 }
 // Tarkistetaan, onko käyttäjänimellä varustettu tili jo olemassa.
 if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
-    // Sidotaan parametrit (s, i, jne.), Hajautetaan salasana PHP password_hash -toiminnolla.
+    // Sidotaan parametrit (s, i, jne.).
     $stmt->bind_param('s', $_POST['username']);
-	$stmt->execute();
+	$stmt->execute(); // Viedään tieto tietokantaan.
 	$stmt->store_result();
     // Tallenna tulos (store_result), jotta voimme tarkistaa, onko tili tietokannassa.
     if ($stmt->num_rows > 0) {
@@ -47,7 +47,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 	} else {
     // Käyttäjätunnusta ei ole, lisää uusi tili.
     if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {   
-    // Ei paljasteta salasanoja tietokannassa: hajautetaan salasana ja käytetään password_verify, kun käyttäjä kirjautuu sisään.
+    // Ei paljasteta salasanoja tietokannassa: hajautetaan salasana (password_hash), salataan (PASSWORD_DEFAULT) ja tallennetaan $password:iin.
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     // $uniqud muuttuja luo yksilöllisen tunnuksen, jota käytetään aktivointikoodissa (se lähetetään käyttäjän sähköpostiosoitteeseen).
     $uniqid = uniqid();
