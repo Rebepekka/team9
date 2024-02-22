@@ -1,5 +1,5 @@
 # team9
-<strong>Rebekka</strong>
+<strong>Rebekka.</strong>
 <ul>
 <li>mainpage.html</li>
 <li>membership.html</li>
