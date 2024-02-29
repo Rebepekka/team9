@@ -1,49 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/loginstyle.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <title>Log in</title>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/loginstyle.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<title>Bodybuilders | Log in</title>
 </head>
 <body>
-  <div class="login">
-    <h1>Login</h1>
-    <form action="authenticate.php" method="post">
-      <label for="username">
-        <i class="fas fa-user"></i>
-      </label>
-      <input type="text" name="username" placeholder="Username" id="username" required>
-      <label for="password">
-        <i class="fas fa-lock"></i>
-      </label>
-      <input type="password" name="password" placeholder="Password" id="password" required>
-      <input type="submit" value="Login">
-    </form>
-  </div>
-  <!-- VANHA LOMAKE TÄSTÄ ALASPÄIN ----------------------------------------------------------->
-  <!-- <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <h2>Kirjaudu sisään</h2>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Sähköpostiosoite</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Syötä sähköposti">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Salasana</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Salasana">
-          </div>
-          <button type="submit" class="btn btn-primary">Kirjaudu sisään</button>
-        </form>
-      </div>
-    </div>
-  </div> -->
-  <!-- Lisää Bootstrap JS -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-  <!-- VANHA LOMAKE TÄSTÄ YLÖSPÄIN --------------------------------------------------------------->
+<div class="login">
+  <h1>Login</h1>
+  <form action="authenticate.php" method="post">
+    <label for="username">
+      <i class="fas fa-user"></i>
+    </label>
+    <input type="text" name="username" placeholder="Username" id="username" required>
+    <label for="password">
+      <i class="fas fa-lock"></i>
+    </label>
+    <input type="password" name="password" placeholder="Password" id="password" required>
+    <input type="submit" value="Login">
+  </form>
+</div>
 </body>
 </html>
