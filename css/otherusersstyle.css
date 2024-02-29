@@ -1,29 +1,37 @@
+body {
+	background-color: black;
+	}
 header {
 	background-color: hsla(50, 3%, 20%, .65);
 	margin-left: 25%;
 	margin-right: 25%;
 	height: 200px;
 	}
-body {
-	background-color: black;
-	}
 .text {
-	background-color: hsla(50, 3%, 70%, 65);
+	background-color: rgb(110, 104, 94, 0.75); /* neljäs arvo läpinäkyvyys */
 	margin-left: 25%;
 	margin-right: 25%;
 	height: 50px;
 	}
 .text h1 {
-	color: black;
+	color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-shadow: 1px 1px 2px rgb(60, 13, 13), 0 0 1em black, 0 0 0.6em black;
 	padding: 0.5em; /* täyttö elementin sisällä */
 	text-align: center;
+	font-weight: bolder;
 	}
 .users {
-	background-color: hsla(50, 3%, 70%, 65);
+	background-color: rgb(110, 104, 94, 0.75); /* neljäs arvo läpinäkyvyys */
 	margin-left: 25%;
 	margin-right: 25%;
 	height: 100%;
 	padding: 20px;
-	font-size: large;
 	text-align: center;
+	color: white;
+    font-size: 20px;
+    font-weight: bolder; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 30px;
+	text-shadow: 1px 1px 2px rgb(60, 13, 13), 0 0 1em black, 0 0 0.6em black;
 	}
