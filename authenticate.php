@@ -1,12 +1,6 @@
 <?php
 session_start();
-$initials=parse_ini_file("./.ht.settings.ini");
-// Muodostetaan yhteys.
-$con=mysqli_connect($initials["host"], $initials["user"], $initials["pass"], $initials["name"]);
-if ( mysqli_connect_errno() ) {
-    // Jos yhteydessä on virhe, pysäytä komentosarja ja näytä virhe.   
-    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+include ("./connect.php"); // Linkki: luodaan yhteys.
 // Tarkistetaan, onko kirjautumislomakkeen tiedot lähetetty, isset () tarkistaa, ovatko tiedot olemassa.
 if ( !isset($_POST['username'], $_POST['password']) ) {
     // Jos ei saa lähetettyjä tietoja...
@@ -44,4 +38,4 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     
     $stmt->close();
 }
-?>         
+?>        
