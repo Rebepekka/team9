@@ -1,12 +1,6 @@
 <?php
 session_start();
-$initials=parse_ini_file("./.ht.settings.ini");
-// Muodostetaan yhteys
-$con=mysqli_connect($initials["host"], $initials["user"], $initials["pass"], $initials["name"]);
-if (mysqli_connect_errno()) {
-    // Jos yhteydessä on virhe, pysäytä komentosarja ja näytä virhe.
-    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+include ("./connect.php"); // Linkki: luodaan yhteys.
 // Tarkistetaan, onko sähköposti ja koodi olemassa
 if (isset($_GET['email'], $_GET['code'])) {
 	if ($stmt = $con->prepare('SELECT * FROM accounts WHERE email = ? AND activation_code = ?')) {
@@ -21,7 +15,7 @@ if (isset($_GET['email'], $_GET['code'])) {
                 $newcode = 'activated';
 				$stmt->bind_param('sss', $newcode, $_GET['email'], $_GET['code']);
 				$stmt->execute();
-				echo 'Your account is now activated! You can now <a href="membership.html">login</a>!';
+				echo 'Your account is now activated! You can now <a href="login.html">login</a>!';
 			}
 		} else {
 			echo 'The account is already activated or doesn\'t exist!';
@@ -35,4 +29,4 @@ if ($account['activation_code'] == 'activated') {
 } else {
 
 }
-?>    
+?>     
