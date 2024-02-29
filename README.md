@@ -17,7 +17,7 @@
 <li>register.html</li>
 <li>register.php</li>
 <li>update_address.php</li>
-<li>update_form.php</li>
+<li>update_form.html</li>
 <li>gymwearmember.css</li>
 <li>gymwearstyle.css</li>
 <li>homestyle.css</li>
