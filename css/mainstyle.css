@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-size: larger;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+header, h1 {
+    margin-top: 40px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    font-weight: bolder;
+    filter: brightness(90%);
+}
+body {
+    background-color:black; 
+}
+.headline {
+    display: flex; /* tehdään elementistä flex */
+    align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
+    width: 100%;
+    margin: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    filter: brightness(80%);
+} 
+.headline p {
+    font-size: 40px;
+    padding-left: 25%;
+    padding-top: 25%;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px rgb(60, 13, 13), 0 0 1em black, 0 0 0.6em black;
+}
+.nav-link:hover {
+    background-color: rgb(57, 56, 56, 0.45);
+  }
+h1:hover {
+    color: rgb(142, 138, 138);
+} 
+main {
+    min-height: 100%;
+}
+.headline2, .headline3 {
+    display: flex; /* tehdään elementistä flex */
+    align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
+    /* width: 70%; */
+    margin: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    filter: brightness(80%);
+}
+.headline2 p, .headline3 p {
+    font-size: 25px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 320px;
+    text-shadow: 1px 1px 2px rgb(60, 13, 13), 0 0 1em black, 0 0 0.6em black;
+}
+.section {
+    display: flex; /* asettaa .div3 -elementin joustavaksi konttirakenteeksi.*/
+    justify-content: space-between; /* varmistaa, että kuvat ovat vierekkäin ja niiden välissä on tasainen tila. */
+ /*   align-items: flex-start; /* keskittää tekstin pystysuunnassa kuvien yläreunaan.*/
+    flex-wrap: wrap; /* mahdollistaa rivien käärimisen uudelle riville, jos tila loppuu.*/
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    background-color: black;
+    padding-left: 3%;
+}
+.row {
+    flex-basis: calc(33.33%); /* määrittää kullekin .row -elementille kolmanneksen leveydestä */
+    margin-bottom: 20px; /* lisää 20 pikseliä tilaa rivien väliin */
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+}
+.text-box {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 60%;
+    padding-right: 10%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 1.5;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    background-color: black;
+    filter: brightness(90%);
+}
+.text-box a {
+    color: white;
+    font-size: 25px;
+}
+.img-responsive {
+    width: 90%;
+    height: 80%;
+    opacity: 0.7;
+}
+.row:hover .text-box {
+        opacity: 1;
+    }
+.image {
+    width: 90%;
+    height: 80%;
+    opacity: 0.7;
+}
+.text {
+    margin-top: 3%;
+    text-align: center;
+    width: 80%;
+    filter: brightness(90%);
+    line-height: 0.8em;
+}
+.text a {
+    font-size: 25px;
+    padding-left: 5%;
+    font-weight: bolder;
+    color: white;
+}
+.client, .client2 {
+    display: flex; /* tehdään elementistä flex */
+    align-items: center; /* tasataan elementit keskeltä pystysuunnassa*/
+    margin: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    filter: brightness(80%);
+   }
+.client p, .client2 p {
+    font-size: 25px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 130px;
+    text-shadow: 1px 1px 2px rgb(60, 13, 13), 0 0 1em black, 0 0 0.6em black;
+}
+.button {
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+}
+.button  a {
+    color: white;
+    filter: brightness(80%);
+    font-size: 25px;
+}
+a:hover {
+    color: rgb(142, 138, 138);
+} 
+i:hover {
+    color: gold;
+}
+.top, .top a {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    filter: brightness(90%);
+}
+footer {
+    margin-top: 60px;
+    height: 220px;
+    display: flex;
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+}
+address {
+    font-size: 20px;
+    color: white; /* Valkoinen teksti */
+    text-align: center; /* Keskittää tekstin vaakasuunnassa */
+    padding: 20px; /* Pienennetty paddingia */
+    font-weight: bolder;
+    filter: brightness(90%);
+    text-shadow: 1px 1px 2px rgb(60, 13, 13), 0 0 1em black, 0 0 0.6em black;
+}
+@media only screen and (max-width: 768px) { /* kun näytön leveys 768px... */
+    .headline, h1, .headline2, .headline3, .section, .client, .client2, .button, footer {
+        flex-direction: column;  /* ...asettelu muuttuu pystysuunnaksi... */
+        height: auto; /* Automaattinen korkeus mobiililaitteille */
+    }
+    .headline p, .client, .client2, .button {
+        font-size: 18px; /* Pienennetty fonttikokoa mobiililaitteille */
+        padding-left: 5%;
+        padding-top: 50px;
+    }
+}
