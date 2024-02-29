@@ -1,56 +1,51 @@
-header {
-    background-color: black;
-    margin-left: 20%; /* asetetaan marginaali */
-    margin-right: 20%; /* asetetaan marginaali */
-    height: 200px;
-}
-.navtop {
-    background-color: hsla(50, 3%, 20%, .65); /* taustaväri */
-    padding: 0.1em; /* täyttö elementin sisällä */
-    color: whitesmoke; /* tekstin väri */
-    margin-left: 20%; /* asetetaan marginaali */
-    margin-right: 20%; /* asetetaan marginaali */
-    margin-bottom: 1%; /* asetetaan marginaali */
-}
-.navtop a {
-    margin-left: 2%; /* asetetaan marginaali */
-    font-size: large; /* fonttikoko suuri */
-    padding: 0 20px; /* täyte elementin sisällä */
-    color: rgb(194, 192, 192); /* tekstin väri */
-    text-decoration: none; /* poistaa alleviivauksen */
-}
-.navtop a, i {
-    padding: 0 8px;
-}
-.navtop h1 {
-    margin-left: 2%; /* asetetaan marginaali */
-    /* padding-top: 1.5%; */
-  }
-.navtop a, h1 {
-    display: inline-flex; 
-    align-items: center; /* asettelu keskelle elementtiä */
+* {
+    box-sizing: border-box;
+    color: white;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px rgb(60, 13, 13), 0 0 1em black, 0 0 0.6em black;
 }
 body {
-    background-color: hsla(50, 3%, 1%, .95); /* taustaväri */
+    background-color:black; 
 }
+header {
+    height: 70px;
+}
+.headline {
+    margin: auto; 
+    background-position: center;
+    height: 90px;
+    background-color: rgb(110, 104, 94, 0.75); /* neljäs arvo läpinäkyvyys */
+    padding: 2%;
+} 
+.headline p {
+    font-size: 30px;
+    font-weight: bolder;
+    filter: brightness(85%);
+}
+.nav-link:hover {
+    background-color: rgb(57, 56, 56, 0.45);
+  }
+h1:hover {
+    color: rgb(142, 138, 138);
+} 
 .content {
-    background-color: rgb(194, 192, 192); /* taustaväri */
-    margin-left: 20%; /* asetetaan marginaali */
-    margin-right: 20%; /* asetetaan marginaali */
-    padding-top: 0.5%;
-    padding-bottom: 1.5%;
+    background-color: rgb(110, 104, 94, 0.75); /* neljäs arvo läpinäkyvyys */
+    margin: auto; 
+    background-position: center;
+    padding: 2%;
 }
-.content h2, p, table { 
-    margin-left: 2%;
+.content p {
+    font-size: 25px;
+    font-weight: bolder; 
+    filter: brightness(85%);
 }
-.content a { 
-    margin-left: 2%;
-    font-size: large;
-    color: black;
+.content table {
+    font-size: 20px;
+    font-weight: bolder;    
 }
-footer {
-    background-color: black;
-    margin-left: 20%; /* asetetaan marginaali */
-    margin-right: 20%; /* asetetaan marginaali */
-    height: 400px;
+.update, .update a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
 }
