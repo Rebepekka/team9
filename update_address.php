@@ -3,7 +3,7 @@ session_start(); // Aloita istunto
 $initials=parse_ini_file("./.ht.settings.ini");
 // Tarkista, onko käyttäjä kirjautunut sisään
 if(!isset($_SESSION['loggedin'])) {
-    echo "Kirjaudu sisään päivittääksesi osoitetietosi.";
+    echo "Log in to update your information.";
     exit;
 }
 // Muodosta yhteys tietokantaan
@@ -23,7 +23,7 @@ $sql = "UPDATE accounts SET username='$username', email='$email' WHERE username=
 
 if ($mysqli->query($sql) === TRUE) {
     header('Location: profile.php'); // Ohjaa käyttäjä takaisin profiilisivulle
-    echo "Tiedot päivitetty onnistuneesti!";
+    echo "Information updated successfully!";
     $_SESSION['name'] = $username;
 } else {
     echo "Virhe: " . $sql . "<br>" . $mysqli->error;
