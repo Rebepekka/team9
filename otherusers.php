@@ -7,7 +7,9 @@
 	<title>Bodybuilders | Other users</title>
 </head>
 <body>
-	<header></header>
+	<header>
+		<a href="profile.php" style="font-size: 19px; filter: brightness(85%); color: gold;">BACK</a>
+	</header>
 
 	<div class="text">
 		<h1>OTHER USERS</h1>
