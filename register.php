@@ -42,7 +42,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
         print "Username exists, please choose <a href='./register.html'>another</a>!";
 	} else {
     // Käyttäjätunnusta ei ole, lisää uusi tili.
-    if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email) VALUES (?, ?, ?, ?)')) {
+    if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email) VALUES (?, ?, ?)')) {
     // if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {   
     // Ei paljasteta salasanoja tietokannassa: hajautetaan salasana (password_hash), salataan (PASSWORD_DEFAULT) ja tallennetaan $password:iin.
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
