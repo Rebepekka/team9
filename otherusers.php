@@ -12,7 +12,7 @@
 	</header>
 
 	<div class="text">
-		<h1>OTHER USERS</h1>
+		<h1>USERS</h1>
 	</div>
 
 	<div class="users">
