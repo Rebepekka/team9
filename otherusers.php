@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<a href="profile.php" style="font-size: 19px; filter: brightness(85%); color: gold;">BACK</a>
+		<a href="profile.php" id="back-link">BACK</a>
 	</header>
 
 	<div class="text">
