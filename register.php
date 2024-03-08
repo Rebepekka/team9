@@ -62,7 +62,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // mail($_POST['email'], $subject, $message, $headers);
     // echo 'Thank you for signing up! Next, go to log in. ';
     //  echo "<a href='login.html'> Log in</a>!";
-    header('Location: login.html');
+    header('Location: login2.html');
     // exit();
 } else {
     // SQL-lauseessa on jotain vikaa. On tarkistettava, että tilitaulukossa on kaikki kolme kenttää.
