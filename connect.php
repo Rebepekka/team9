@@ -1,7 +1,7 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 
-// Salasanat ym. laitetaan eri tiedostoon. ht.-alkuisia tiedostoja "ei näy".
+// Salasanat ym. laitetaan eri tiedostoon. .ht.-alkuisia tiedostoja "ei näy".
 $initials=parse_ini_file("./.ht.settings.ini");
 
 try{
