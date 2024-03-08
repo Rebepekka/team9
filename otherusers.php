@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<a href="profile.php" id="back-link">BACK</a>
+		<a href="profile.php">BACK</a>
 	</header>
 
 	<div class="text">
