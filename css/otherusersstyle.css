@@ -7,6 +7,11 @@ header {
 	margin-right: 25%;
 	height: 200px;
 	}
+header a {
+	font-weight: bolder;
+	text-decoration: none;
+	padding: 0.5em;
+}
 .text {
 	background-color: rgb(110, 104, 94, 0.75); /* neljäs arvo läpinäkyvyys */
 	margin-left: 25%;
