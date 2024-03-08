@@ -36,7 +36,7 @@ $stmt->close();
     	<div class="container-fluid">
             <ul class="navbar-nav mr-auto">  
             <li class="nav-item active">
-                <a class="nav-link" href="otherusers.php" style="font-size: 19px; filter: brightness(95%);">OTHER USERS</a>
+                <a class="nav-link" href="otherusers.php" style="font-size: 19px; filter: brightness(95%);">USERS</a>
             </li>
 			<li class="nav-item active">
                 <a class="nav-link" href="home.php" style="font-size: 19px; filter: brightness(85%); color: gold;">BACK</a>
