@@ -1,41 +1,62 @@
-body, h1, h2, p, nav {
-    margin: 0;
-    padding: 0;
-}
-
-/* Font-family ja font-size */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: white;
+    background-color: black;
+    color: rgb(255, 254, 254);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Kaikki tekstit ja kuvat näkyvät sivun sisällä */
+    margin: 0;
+    padding-top: 50px; /* Tilaa ylhäällä */
 }
 
 header {
-    background-color: black;
+    text-align: center; /* Otsikko keskellä */
     padding: 20px;
-    text-align: center;
 }
 
-header h1 {
-    font-size: 24px;
+.back-link {
+    color: rgb(41, 127, 112);
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px; /* Tilaa otsikon ja linkin välille */
+ }
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-bottom: 20px; /* Tilaa otsikon alla */
 }
 
 section {
-    padding: 20px;
+    text-align: center; /* Asettaa kuvat ja tekstin keskelle */
     margin-bottom: 20px;
 }
 
-/* Kuvat */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+h2 {
+    color: rgb(255, 255, 255);
 }
 
-/* Footer tyylit */
+p {
+    color: rgb(255, 255, 255);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; 
+    display: block;
+    margin: 10px auto;
+}
+
 footer {
-    background-color: red;
-    padding: 20px;
     text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    color: rgb(41, 127, 112);
 }
