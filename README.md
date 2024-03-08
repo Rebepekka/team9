@@ -1,8 +1,8 @@
 # team9
 <strong>Rebekka</strong>
+<p>Web-ohjelmoinnin ryhmätyöhön tehdyt sivut:</p>
 <ul>
 <li>.ht.settings.ini</li>
-<li>activate.php</li>
 <li>authenticate.php</li>
 <li>connect.php</li>
 <li>error.html</li>
@@ -27,4 +27,22 @@
 <li>profilestyle.css</li>
 <li>registerstyle.css</li>
 </ul>
- 
+<strong>Heta</strong>
+<p>Web-ohjelmoinnin ryhmätyöhön tehdyt sivut:</p>
+<ul>
+<li>administrator.php</li>
+<li>manage_accounts.html</li>
+<li>manage_accounts.php</li>
+<li>Starting Strenght aloittelijoille</li>
+<li>text.tx</li>
+<li></li>
+<li></li>
+</ul>
+<strong>Niklas</strong>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>

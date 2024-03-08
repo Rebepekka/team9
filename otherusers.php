@@ -16,7 +16,6 @@
 	</div>
 
 	<div class="users">
-
 <?php
 session_start();
 // Muodostetaan yhteys.
@@ -39,7 +38,6 @@ if ($stmt = $con->prepare('SELECT username FROM accounts')) {
 }
 $con->close();
 ?>
-
 	</div>
 </body>
 </html>
