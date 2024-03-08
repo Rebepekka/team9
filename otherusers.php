@@ -7,7 +7,7 @@
 	<title>Bodybuilders | Other users</title>
 </head>
 <body>
-	<header>
+	<header style="text-align: left; padding-left: 10px; pagging-top: 10px;">
 		<a href="profile.php" style="font-size: 19px; filter: brightness(85%); color: gold;">BACK</a>
 	</header>
 
