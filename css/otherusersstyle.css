@@ -7,8 +7,11 @@ header {
 	margin-right: 25%;
 	height: 200px;
 	}
-header a {
+#back-link {
+	font-size: 19px;
 	font-weight: bolder;
+	color: gold;
+	filter: brightness(85%);
 	text-decoration: none;
 	padding: 0.5em;
 }
