@@ -24,9 +24,9 @@ if (isset($_GET['email'], $_GET['code'])) {
 }  
 // En tiiä tarviiko näitä
 // Jos haluamme tarkistaa, onko käyttäjä aktivoinut tilinsä, voimme lisätä seuraavan koodin sivuille, joilla haluamme rajoittaa aktivoimattomia käyttäjiä:
-if ($account['activation_code'] == 'activated') {
+// if ($account['activation_code'] == 'activated') {
 
-} else {
+// } else {
 
-}
+// }
 ?>     
