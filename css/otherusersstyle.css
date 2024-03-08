@@ -7,7 +7,7 @@ header {
 	margin-right: 25%;
 	height: 200px;
 	}
-#back-link {
+header a {
 	font-size: 19px;
 	font-weight: bolder;
 	color: gold;
