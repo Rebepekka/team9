@@ -6,21 +6,15 @@ header {
 	margin-left: 25%;
 	margin-right: 25%;
 	height: 200px;
-	font-size: 19px;
-	font-weight: bolder;
-	color: gold;
-	filter: brightness(85%);
-	text-decoration: none;
-	padding: 0.5em;
 	}
-/* header a {
+header a {
 	font-size: 19px;
 	font-weight: bolder;
 	color: gold;
 	filter: brightness(85%);
 	text-decoration: none;
 	padding: 0.5em;
-} */
+}
 .text {
 	background-color: rgb(110, 104, 94, 0.75); /* neljäs arvo läpinäkyvyys */
 	margin-left: 25%;
