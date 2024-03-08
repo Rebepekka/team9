@@ -42,26 +42,13 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
         print "Username exists, please choose <a href='./register.html'>another</a>!";
 	} else {
     // Käyttäjätunnusta ei ole, lisää uusi tili.
-    if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email) VALUES (?, ?, ?)')) {
-    // if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {   
+    if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email) VALUES (?, ?, ?)')) {  
     // Ei paljasteta salasanoja tietokannassa: hajautetaan salasana (password_hash), salataan (PASSWORD_DEFAULT) ja tallennetaan $password:iin.
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    // $uniqud muuttuja luo yksilöllisen tunnuksen, jota käytetään aktivointikoodissa (se lähetetään käyttäjän sähköpostiosoitteeseen).
-    // $uniqid = uniqid();
-    // $stmt->bind_param('ssss', $_POST['username'], $password, $_POST['email'], $uniqid);
-    $stmt->bind_param('sss', $_POST['username'], $password, $_POST['email']);
-    
+    // Sidotaan arvot parametreihin ja lisätään $stmt->execute(); tietokantaan
+    $stmt->bind_param('sss', $_POST['username'], $password, $_POST['email']);  
     $stmt->execute();
-    // Tilin rekisteröinnin yhteydessä käyttäjän on aktivoitava tilinsä käyttämällä aktivointilinkkiä, joka lähetetään hänen sähköpostiosoitteeseensa. $from- ja $activate_link-muuttujiin omat muuttujat!
- //   $from    = 'noreply@yourdomain.com'; // Tähän pitää päivittää oma!!
- //   $subject = 'Account Activation Required';
- //   $headers = 'From: ' . $from . "\r\n" . 'Reply-To: ' . $from . "\r\n" . 'X-Mailer: PHP/' . phpversion() . "\r\n" . 'MIME-Version: 1.0' . "\r\n" . 'Content-Type: text/html; charset=UTF-8' . "\r\n";
-        
-    // $activate_link = 'http://yourdomain.com/phplogin/activate.php?email=' . $_POST['email'] . '&code=' . $uniqid; // $activate_link = '' pitää päivittää!!
-    // $message = '<p>Please click the following link to activate your account: <a href="' . $activate_link . '">' . $activate_link . '</a></p>';
-    // mail($_POST['email'], $subject, $message, $headers);
-    // echo 'Thank you for signing up! Next, go to log in. ';
-    //  echo "<a href='login.html'> Log in</a>!";
+    // Siirrytään vielä kirjautumaan sisälle
     header('Location: login2.html');
     exit();
 } else {
@@ -74,18 +61,5 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // SQL-lauseessa on jotain vikaa. On tarkistettava, että tilitaulukossa on kaikki kolme kenttää.
     echo 'Could not prepare statement!';
 }
-
 $con->close();
 ?>
-<!-- Linkki, joka vie takaisin kirjautumissivulle (login.html). -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-    <div><a href="login.html"><i class="fas fa-sign-out-alt"></i>Kirjautumissivulle</a></div>
-</body>
-</html> -->
