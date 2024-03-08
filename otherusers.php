@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header style="text-align: left; padding-left: 10px; padding-top: 10px;">
-		<a href="profile.php" style="text-decoration: none; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 19px; filter: brightness(85%); color: gold;"><i class="fa fa-arrow-left"></i>BACK</a>
+		<a href="profile.php" style="text-decoration: none; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 19px; filter: brightness(85%); color: gold;">BACK</a>
 	</header>
 
 	<div class="text">
